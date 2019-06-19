@@ -1,5 +1,6 @@
 <html>
   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
     <title>Vanguard Index Fund Comparison Tool</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -35,9 +36,13 @@
       <p class="riskProfile">Risk level 2 out of 5</p>
       <p class="resultText" id="result-VBTLX"></p>
     </div>
+
     <script src="app.js"></script>
   </body>
   <footer>
-    <p>All calculations are based on the average yearly returns since 2000/2001</p>
+    <canvas id="myChart" width="200" height="200"></canvas>
+    <p>
+      All calculations are based on the average yearly returns since 2000/2001
+    </p>
   </footer>
 </html>
