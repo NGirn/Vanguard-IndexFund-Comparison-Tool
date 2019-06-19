@@ -4,31 +4,40 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Vanguard Index Fund Comparison Tool</h1>
-
-    <div><label>Amount To Invest: £</label> <input id="p" /></div>
-    <div><label>Number Of Years To Hold Investment: </label> <input id="t" /></div>
-
-    <button onclick="calculate()">Calculate</button>
+    <h1 class="title">Vanguard Index Fund Comparison Tool</h1>
 
     <div>
-        <p>Vanguard Real Estate Index Fund Admiral Shares (VGSLX)</p>
-        <p>Risk level 4 out of 5</p>
-        <p id="result-VGSLX"></p>
+      <label class="inputText">Amount To Invest: £</label> <input id="p" />
     </div>
     <div>
-        <p>Vanguard 500 Index Fund Admiral Shares (VFIAX)</p>
-        <p>Risk level 4 out of 5</p>
-        <p id="result-VFIAX"></p>
+      <label class="inputText">Number Of Years To Hold Investment: </label>
+      <input id="t" />
+    </div>
+
+    <button class="calculateButton" onclick="calculate()">Calculate</button>
+
+    <div>
+      <p class="subheading">
+        Vanguard Real Estate Index Fund Admiral Shares (VGSLX)
+      </p>
+      <p class="riskProfile">Risk level 4 out of 5</p>
+      <p class="resultText" id="result-VGSLX"></p>
     </div>
     <div>
-        <p>Vanguard Total Bond Market Index Fund Admiral Shares (VBTLX)</p>
-        <p>Risk level 2 out of 5</p>
-        <p id="result-VBTLX"></p>
+      <p class="subheading">Vanguard 500 Index Fund Admiral Shares (VFIAX)</p>
+      <p class="riskProfile">Risk level 4 out of 5</p>
+      <p class="resultText" id="result-VFIAX"></p>
     </div>
-
-    
-
+    <div>
+      <p class="subheading">
+        Vanguard Total Bond Market Index Fund Admiral Shares (VBTLX)
+      </p>
+      <p class="riskProfile">Risk level 2 out of 5</p>
+      <p class="resultText" id="result-VBTLX"></p>
+    </div>
     <script src="app.js"></script>
   </body>
+  <footer>
+    <p>All calculations are based on the average yearly returns since 2001</p>
+  </footer>
 </html>

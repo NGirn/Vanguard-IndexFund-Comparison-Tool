@@ -1,0 +1,39 @@
+body {
+  background: linear-gradient(#cfd9df, #e2ebf0);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.subheading {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.riskProfile {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calculateButton {
+  font-size: 25px;
+}
+
+.inputText {
+  font-size: 25px;
+}
+
+.title {
+  font-size: 35px;
+}
+
+.resultText {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
